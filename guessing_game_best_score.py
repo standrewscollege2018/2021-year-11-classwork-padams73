@@ -28,7 +28,16 @@ while keep_playing == True:
         # add one to the counter
         counter += 1
 
-        guess = int(input("Guess a number:"))
+        # Check to make sure that the user enters an integer
+        check_number = True
+        while check_number == True:
+            try:
+                guess = int(input("Guess a number:"))
+                check_number = False
+            except:
+                print("Please enter an integer")
+
+
         if guess == number:
             keep_asking = False
         elif guess > number:
