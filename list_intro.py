@@ -40,3 +40,8 @@ for n in names:
 # Use len(list) to get how many times to loop
 for i in range(len(names)):
     print("{}. {}".format(i+1, names[i]))
+
+if "ghjk" in names:
+    print("Present")
+else:
+    print("Not there")
